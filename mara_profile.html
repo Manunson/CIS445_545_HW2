@@ -13,6 +13,7 @@
             color:#402F1D;
             text-align: center;
         }
+    
         .information{
         
             font-size: 120%;
@@ -26,7 +27,8 @@
         }
         .mushroom{
             display: block;
-    
+            transition: opacity 1s;
+            opacity: 1;
             width: 60%;
             margin-left: auto;
             margin-right: auto;
@@ -35,18 +37,46 @@
             
         }
         .mushroom:hover{
-            opacity: 0;
+           transition: opacity .9s;
+           opacity: 0;
             z-index: 0;
         }
         .job-href{
 
+            margin-top: 5%;
+            margin-left: 5%;
+            display: inline-block;
             text-decoration: none;
             background-color: #cfcec4;
             color: #402F1D;
-            padding: 2px 6px 2px 6px;
-            border-right: 1px solid #333333;
-            border-bottom: 1px solid #402F1D;
-        
+            padding: 4px 10px 4px 10px;
+            border-right: 2px solid #402F1D;
+            border-bottom: 2px solid #402F1D;
+            
+            transition: transform .8s;
+            
+        }
+        .job-href:hover{
+            transform: translateX(-10px);
+        }
+
+        .hobbie-href{
+
+            margin-top: 5%;
+            margin-left: 5%;
+            display: inline-block;
+            text-decoration: none;
+            background-color: #cfcec4;
+            color: #402F1D;
+            padding: 4px 10px 4px 10px;
+            border-right: 2px solid #402F1D;
+            border-bottom: 2px solid #402F1D;
+
+            transition: transform .8s;
+
+        }
+        .hobbie-href:hover{
+            transform: translateX(-10px);
         }
         .socials{
             text-align: center;
@@ -60,6 +90,7 @@
 <body>
     <div>
     <a href="#bottom" class="job-href"> Job Profile </a>
+    <a href="#below" class="hobbie-href"> Hobbies Profile </a>
     <h3 class="name" > MARA ANUNSON</h3>
 
     <img class= "mushroom" src="mushroom.webp" >
@@ -78,8 +109,6 @@
         <br>
         <br>
         <br>
-        <br>
-        <br>
     </div>
     <div id="bottom">
         <h2 class="name"><u>JOB PROFILE</u></h2>
@@ -87,6 +116,9 @@
         <br>
         <a class="socials" href="https://www.linkedin.com/in/dev-mara/"> Linked-in</a>
         
+    </div>
+    <div id="below">
+        <h2 class="name"><u>HOBBIES</u></h2>
     </div>
 </body>
 </html>
